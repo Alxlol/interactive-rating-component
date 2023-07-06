@@ -1,0 +1,140 @@
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --white-color: hsl(0, 0%, 100%);
+  --light-grey-color: hsl(217, 12%, 63%);
+  --medium-grey-color: hsl(216, 12%, 54%);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 15px;
+  color: var(--light-grey-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--white-color);
+}
+
+/* Card */
+
+.rating-card {
+  background: radial-gradient(at top, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  height: 350px;
+  width: 350px;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+/* Rating state */
+
+.rating-state {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating-state img {
+  background-color: hsl(213, 19%, 18%);
+  padding: 0.6rem;
+  border-radius: 100%;
+  overflow: visible;
+  width: 35px;
+}
+
+/* Rating buttons */
+.circle-button {
+  background-color: hsl(213, 19%, 18%);
+  padding: 0.6rem;
+  border-radius: 100%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: var(--light-grey-color);
+}
+
+.circle-button.active {
+  background-color: var(--medium-grey-color);
+  color: var(--white-color);
+}
+
+.circle-button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Submit button */
+#submit-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.75rem 0;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+#submit-button:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+/* ThankState */
+.thank-state {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thank-state img {
+  width: 125px;
+}
+
+.rating-result {
+  margin: 1rem 0;
+  background-color: hsl(213, 19%, 18%);
+  padding: 10px 15px;
+  border-radius: 40px;
+}
+
+.rating-result p {
+  color: var(--primary-color);
+}
